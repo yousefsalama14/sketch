@@ -1,0 +1,47 @@
+.banner-video {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .6;
+}
+
+.vlt-project-showcase--style-7 .vlt-project-showcase__item::after,
+.vlt-project-showcase--style-7 .vlt-project-showcase__item::before {
+    z-index: 0;
+}
+
+.vlt-types-list .vlt-types-list__category {
+    font-size: 18px;
+}
+
+.vlt-page-title--style-3 {
+    padding: 170px 0;
+}
+
+.vlt-page-title--style-3 .vlt-page-title__title {
+    font-size: 80px;
+}
+
+.vlt-counter-up--style-3 {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.vlt-counter-up--style-3 .vlt-counter-up__icon {
+    margin-right: 0;
+}
+
+.vlt-counter-up--style-3 .vlt-counter-up__title {
+    margin-left: 0;
+}
+
+.vlt-footer--style-1 {
+    background-image: none;
+}
+
+.vlt-project-showcase--style-2 .swiper-slide:not(.swiper-slide-active) {
+    opacity: 0;
+}
