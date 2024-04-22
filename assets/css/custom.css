@@ -54,3 +54,22 @@
 .vlt-footer--style-1 {
     padding: 30px 0;
 }
+
+.vlt-social-icon--style-1+.vlt-social-icon--style-1,
+.vlt-social-icon--style-2+.vlt-social-icon--style-1,
+.vlt-social-icon--style-1+.vlt-social-icon--style-2,
+.vlt-social-icon--style-2+.vlt-social-icon--style-2 {
+    margin-left: 0;
+}
+
+.vlt-social-icon--style-1,
+.vlt-social-icon--style-2 {
+    margin-bottom: 20px;
+
+}
+
+@media (min-width:1200px) {
+    .vlt-nav--fullscreen__navigation {
+        margin-left: -130px;
+    }
+}
