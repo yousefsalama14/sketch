@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="assets/css/vlt-main.css">
     <!--Custom-->
     <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
 </head>
 
 <body>
@@ -594,8 +596,9 @@
     <script src="assets/scripts/vlt-helpers.js"></script>
     <script src="assets/scripts/vlt-controllers.js"></script>
     <script src="assets/scripts/custom.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <!--Google map-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv_85HechLOo3Rf-AD8sXNMqIb-L5fVic"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv_85HechLOo3Rf-AD8sXNMqIb-L5fVic"></script>
     <script>
         (function ($) {
 
@@ -644,6 +647,26 @@
             }
 
         })(jQuery);
+    </script> -->
+    <script>
+        // Initialize the map and set its view to a default location and zoom level
+        var map = L.map('map').setView([30.047226, 31.354713], 5);
+
+        // Add OpenStreetMap tile layer to the map
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Define the locations
+        var locations = [
+            [30.047226, 31.354713], // Egypt location
+            [25.8750677, 43.5234302], // Saudi location
+        ];
+
+        // Add markers for each location
+        locations.forEach(function (location) {
+            L.marker(location).addTo(map);
+        });
     </script>
 </body>
 
